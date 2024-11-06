@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -25,6 +26,16 @@
         Escapade {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+        };
+
+        LeftPower {
+            bindings = <&ext_power EP_TOG>;
+            key-positions = <1 0 2 3 4 5>;
+        };
+
+        RightPower {
+            bindings = <&none>;
+            key-positions = <6 7 8 9 10 11>;
         };
     };
 
