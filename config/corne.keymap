@@ -37,13 +37,18 @@
             bindings = <&none>;
             key-positions = <6 7 8 9 10 11>;
         };
+
+        snippp {
+            bindings = <&kp LS(LG(S))>;
+            key-positions = <12 13 37>;
+        };
     };
 
     macros {
         Snip: Snip {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp X &kp LS(S)>, <&macro_press>;
+            bindings = <&kp LG(LS(X)) &kp LS(LEFT_SHIFT) &kp S>, <&macro_press>;
 
             label = "SNIP";
         };
@@ -77,10 +82,10 @@
 
             display-name = "Numbers";
             bindings = <
-&kp TAB       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6             &kp N7  &kp N8    &kp N9  &kp N0         &kp BSPC
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT_PARENTHESIS    &kp RIGHT_BRACKET  &trans  &trans    &trans  &kp SEMICOLON  &kp SQT
-&bt BT_SEL 4  &bt BT_NXT    &trans        &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans  &trans    &trans  &trans         &trans
-                                          &kp LGUI      &trans        &kp SPACE               &kp BACKSPACE      &trans  &kp RALT
+&kp TAB         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6             &kp N7           &kp N8    &kp N9  &kp N0         &kp BSPC
+&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT_PARENTHESIS    &kp RIGHT_BRACKET  &trans           &trans    &trans  &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &bt BT_NXT    &trans        &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans           &trans    &trans  &trans         &trans
+                                            &kp LGUI      &trans        &kp SPACE               &kp BACKSPACE      &kp RIGHT_SHIFT  &kp RALT
             >;
         };
 
