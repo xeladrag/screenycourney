@@ -40,7 +40,7 @@
 
         snippp {
             bindings = <&kp LS(LG(S))>;
-            key-positions = <12 14 37>;
+            key-positions = <12 14 13>;
         };
     };
 
