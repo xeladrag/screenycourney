@@ -44,16 +44,6 @@
         };
     };
 
-    macros {
-        Snip: Snip {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(X)) &kp LS(LEFT_SHIFT) &kp S>, <&macro_press>;
-
-            label = "SNIP";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
