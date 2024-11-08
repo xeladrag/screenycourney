@@ -72,9 +72,9 @@
 
             display-name = "Numbers";
             bindings = <
-&kp TAB         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6             &kp N7           &kp N8    &kp N9  &kp N0         &kp BSPC
-&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT_PARENTHESIS    &kp RIGHT_BRACKET  &trans           &trans    &trans  &kp SEMICOLON  &mt RIGHT_SHIFT SQT
-&kp LEFT_SHIFT  &bt BT_NXT    &trans        &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans           &trans    &trans  &trans         &trans
+&kp TAB         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6             &kp N7           &kp N8     &kp N9  &kp N0         &kp BSPC
+&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT_PARENTHESIS    &kp RIGHT_BRACKET  &kp MINUS        &kp EQUAL  &trans  &kp SEMICOLON  &mt RIGHT_SHIFT SQT
+&kp LEFT_SHIFT  &bt BT_NXT    &trans        &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans           &trans     &trans  &trans         &trans
                                             &kp LGUI      &trans        &kp SPACE               &kp BACKSPACE      &kp RIGHT_SHIFT  &kp RALT
             >;
         };
@@ -88,19 +88,19 @@
 
             display-name = "Symbols";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT    &kp UP_ARROW    &kp DLLR   &kp LS(LPAR)    &kp LS(RPAR)  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LBKT        &kp RBKT      &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans    &trans          &trans     &trans          &kp UNDER     &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                               &kp LGUI        &trans     &kp SPACE       &kp RET       &trans     &kp RALT
+&kp GRAVE       &trans  &trans    &kp UP_ARROW    &trans     &kp LS(LPAR)            &kp LS(RPAR)           &trans     &trans     &kp LPAR  &kp RPAR  &kp BSPC
+&kp LEFT_SHIFT  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans    &trans    &kp NON_US_BACKSLASH
+&kp LCTRL       &trans  &trans    &trans          &trans     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans     &trans     &trans    &trans    &kp TILDE
+                                  &kp LGUI        &trans     &kp SPACE               &kp RET                &trans     &kp RALT
             >;
         };
 
         FN+BT {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6               &kp F7             &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &trans             &trans  &trans  &trans   &trans   &trans
-&bt BT_PRV  &bt BT_NXT    &trans        &trans        &trans        &ext_power EP_TOG    &ext_power EP_TOG  &trans  &trans  &trans   &trans   &kp Z
-                                        &trans        &trans        &trans               &trans             &trans  &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6               &kp F7             &kp F8     &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &trans             &trans     &trans  &trans   &trans   &trans
+&bt BT_PRV  &bt BT_NXT    &trans        &trans        &soft_off     &ext_power EP_TOG    &ext_power EP_TOG  &soft_off  &trans  &trans   &trans   &kp Z
+                                        &trans        &trans        &trans               &trans             &trans     &trans
             >;
         };
     };
