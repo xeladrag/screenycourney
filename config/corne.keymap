@@ -96,7 +96,7 @@
 &kp GRAVE       &trans  &trans    &kp UP_ARROW    &trans     &kp LS(LPAR)            &kp LS(RPAR)           &trans     &trans     &kp LPAR  &kp RPAR  &kp BSPC
 &kp LEFT_SHIFT  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans    &trans    &kp NON_US_BACKSLASH
 &kp LCTRL       &trans  &trans    &trans          &trans     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans     &trans     &trans    &trans    &kp TILDE
-                                  &kp LGUI        &mo 3      &kp SPACE               &kp RET                &trans     &kp RALT
+                                  &kp LGUI        &mo 1      &kp SPACE               &kp RET                &trans     &kp RALT
             >;
         };
 
