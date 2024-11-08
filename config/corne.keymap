@@ -39,6 +39,16 @@
         };
     };
 
+    macros {
+        Snip: Snip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp LS(S)>, <&macro_press>;
+
+            label = "SNIP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -88,6 +98,33 @@
 &kp LSHFT  &trans    &trans    &trans          &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                &kp LGUI        &trans     &kp SPACE    &kp RET    &trans     &kp RALT
             >;
+        };
+
+        Gaming {
+            bindings = <
+&kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp N6       &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp Q   &kp W   &kp E   &kp I   &kp P        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp DOT      &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp V   &mo 2   &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp F1      &kp F2        &kp F3        &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans      &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &kp Z
+                                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        FN {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
